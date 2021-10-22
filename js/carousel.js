@@ -133,4 +133,4 @@ function Carousel(scrollActive = false, buttonsActive = true) {
         nextButton.classList.remove('hidden');
       }
     }
-  }
+}
