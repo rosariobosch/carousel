@@ -1,0 +1,76 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+button {
+  border: none;
+  background-color: transparent;
+  outline: none;
+  padding: 0;
+}
+
+.carousel {
+  position: relative;
+  height: 600px;
+  width: 80%;
+  margin: 0 auto;
+  overflow: hidden;
+}
+.carousel .btn-carousel {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  cursor: pointer;
+  z-index: 15;
+  padding: 15px;
+  -webkit-tap-highlight-color: transparent;
+}
+.carousel .btn-carousel .arrow-right, .carousel .btn-carousel .arrow-left {
+  border: solid #ffffff;
+  border-width: 0 2px 2px 0;
+  display: inline-block;
+  padding: 12px;
+}
+.carousel .btn-carousel.btn-right {
+  right: 0;
+}
+.carousel .btn-carousel.btn-right .arrow-right {
+  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+  margin-right: 4px;
+}
+.carousel .btn-carousel.btn-left {
+  left: 0;
+}
+.carousel .btn-carousel.btn-left .arrow-left {
+  transform: rotate(135deg);
+  -webkit-transform: rotate(135deg);
+  margin-left: 4px;
+}
+.carousel .slide-container {
+  width: 90%;
+  height: 100%;
+  position: relative;
+  transition: transform 500ms ease-in;
+  touch-action: none;
+}
+.carousel .slide-container .carousel-slide {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding: 1%;
+}
+.carousel .slide-container .carousel-slide .carousel-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.carousel .hidden {
+  display: none;
+}
+
+/*# sourceMappingURL=style.css.map */
